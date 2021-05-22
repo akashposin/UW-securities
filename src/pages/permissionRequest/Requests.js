@@ -243,9 +243,9 @@ const Requests = () => {
         lockdownBuildings.push(fe);
       }
     });
-    if (typeof mapObj.getLayer('selectedBuilding') !== 'undefined') {
-      mapObj.removeLayer('selectedBuilding');
-      mapObj.removeSource('selectedBuilding');
+    if (typeof mapObj.getLayer('lockdownBuildings') !== 'undefined') {
+      mapObj.removeLayer('lockdownBuildings');
+      mapObj.removeSource('lockdownBuildings');
     }
 
     mapObj.addSource('lockdownBuildings', {
